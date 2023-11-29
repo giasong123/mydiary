@@ -1,10 +1,24 @@
+import styled from "@emotion/styled";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./styles/App.css";
 
 function App() {
+  const Contents = styled.main`
+    width: 100%;
+    min-height: 500px;
+  `;
+
   return (
-   <div className="wrap">
-    테스트 
-   </div>
+    <div className="layout">
+      <div className="wrap">
+        <Header></Header>
+
+        <Contents>중심 컨텐츠</Contents>
+
+        <Footer></Footer>
+      </div>
+    </div>
   );
 }
 
